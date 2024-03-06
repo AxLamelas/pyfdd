@@ -7,7 +7,6 @@ license = "GPL-3.0"
 readme = "README.md"
 homepage = "https://github.com/edbosne/pyfdd"
 
-
 [tool.poetry.dependencies]
 python = ">=3.7,<3.12"
 numpy = "*"
@@ -15,16 +14,7 @@ matplotlib = ">=3.3.0, !=3.4.*"
 scipy = "*"
 numdifftools = "*"
 pandas = "*"
-seaborn = "*"
-packaging = "*"
-pyinstaller = "*"
-pyqt5 = [{version = ">=5.15.0", markers = "platform_system == 'Windows'"},
-         {version = "==5.14", markers = "platform_system == 'Linux'"}]
-
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.scripts]
-#compile = "poetry run pyinstaller ./pyfdd/__main__.py --windowed --onefile --icon ./images/icon.ico --name PyFDD"
